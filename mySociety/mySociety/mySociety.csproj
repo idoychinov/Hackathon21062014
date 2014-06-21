@@ -742,6 +742,7 @@
     <Content Include="Scripts\main-slider.js" />
     <Content Include="Scripts\main.js" />
     <Content Include="solved-problems.html" />
+    <Content Include="Styles\main-slider.css" />
     <Content Include="Styles\main.css" />
     <Content Include="Web.config" />
     <Content Include="Scripts\libs\jquery-2.1.1.min.map" />
