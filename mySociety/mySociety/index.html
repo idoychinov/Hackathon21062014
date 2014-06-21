@@ -5,12 +5,20 @@
     <script src="Scripts/libs/jquery-2.1.1.min.js"></script>
     <script src="Scripts/libs/handlebars.min.js"></script>
     <script src="Scripts/libs/jssorSlider/js/jssor.slider.min.js"></script>
+    <script src="Scripts/main.js"></script>
 </head>
 <body>
     <div id="wrapper">
         <header>
-            <div id="logo">Somo logo here</div>
+            <div id="logo">Somе logo here</div>
             <div id="site-name">Site name here</div>
+            <div id="user-section"></div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Начало</a></li>
+                    <li><a href="index.html">Подай Сигнал</a></li>
+                </ul>
+            </nav>
 
         </header>
         <section>
@@ -19,5 +27,23 @@
         </section>
         <footer></footer>
     </div>
+
+    <script id="user-section-template" type="text/x-handlebars-template">
+        {{#if registered}}
+        Здравей, {{user}}
+        <a id="profile-buttonn" href="#">Профил</a>
+        <a id="exit-button" href="#">Изохд</a>
+        {{/if}}
+        {{#unless registered}}
+        <label for="user-name">Потребителско име:</label>
+        <input id="user-name" type="text" />
+
+        <label for="user-password">Парола:</label>
+        <input id="user-password" type="text" />
+
+        <a id="log-in-button" href="#">Вход</a>
+        <a id="register-button" href="#">Регистрация</a>
+        {{/unless}}
+    </script>
 </body>
 </html>

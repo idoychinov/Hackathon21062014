@@ -726,6 +726,7 @@
     <Content Include="Scripts\libs\jssorSlider\transitions\caption-transitions%28390%29.html" />
     <Content Include="Scripts\libs\jssorSlider\transitions\slideshow-transition-builder-controller.min.js" />
     <Content Include="Scripts\libs\jssorSlider\transitions\slideshow-transitions%28360%29.html" />
+    <Content Include="Scripts\main.js" />
     <Content Include="Styles\main.css" />
     <Content Include="Web.config" />
     <Content Include="Scripts\libs\jquery-2.1.1.min.map" />
