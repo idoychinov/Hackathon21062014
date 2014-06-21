@@ -10,8 +10,17 @@ jQuery(document).ready(function ($) {
                     .append($("<li />").text("Разрешени"))))
             .append($("<li />").text("Инициативи"))
             .append($("<li />").text("Правила за ползване"))
-        ))
+        ).append($("<span />").addClass("copyright").text("Team Golden Ages")));
 
+    var showBtn = $('#show-log-in')
+                   .on('click', showLogIn);
+
+    function showLogIn() {
+        var logInForm = $('#log-in-form')
+            .removeClass('hidden');
+        showBtn.addClass('hidden');
+
+    }
 
     function loadUserSection(isLoggedIn) {
         var template = Handlebars.compile($("#user-section-template").html());
@@ -35,12 +44,12 @@ jQuery(document).ready(function ($) {
 
     function loadMainNav(isLoggedIn) {
         var links = [
-            { display: true, href: "index.html", text: "Начало" },
-            { display: true, href: "signal.html", text: "Подай Сигнал" },
+            { display: true, href: "signal.html", text: "Подай Сигнал", className: "signal-btn" },
             { display: isLoggedIn, href: "your-signals.html", text: "Твойте Сигнали" },
         ],
         template = Handlebars.compile($("#main-nav-template").html());
 
         $("#main-nav").html(template({ links: links }));
     }
-})
+
+});

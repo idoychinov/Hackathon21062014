@@ -12,8 +12,8 @@
 <body>
     <div id="wrapper">
         <header>
-            <div id="logo">Somе logo here</div>
-            <div id="site-name">Site name here</div>
+            <div id="logo"><img src="" alt="logo" /></div>
+            <h1 id="site-name">mySociety</h1>
             <div id="user-section"></div>
             <nav id="main-nav"></nav>
 
@@ -140,14 +140,19 @@
         <a id="exit-button" href="#">Изохд</a>
         {{/if}}
         {{#unless registered}}
-        <label for="user-name">Потребителско име:</label>
-        <input id="user-name" type="text" />
+        <div id="log-in">
+            <div id="log-in-form" class="hidden">
+                <label for="user-name">Потребителско име:</label>
+                <input id="user-name" type="text" />
 
-        <label for="user-password">Парола:</label>
-        <input id="user-password" type="text" />
+                <label for="user-password">Парола:</label>
+                <input id="user-password" type="text" />
 
-        <a id="log-in-button" href="#">Вход</a>
-        <a id="register-button" href="#">Регистрация</a>
+                <a id="log-in-button" href="#">Влез</a>
+            </div>
+            <a id="show-log-in" href="#">Вход</a>
+            <a id="register-button" href="#">Регистрация</a>
+        </div>
         {{/unless}}
     </script>
 
@@ -155,7 +160,7 @@
         <ul>
             {{#each links}}
             {{#if display}}
-            <li><a href="{{href}}">{{text}}</a></li>
+            <li {{#if className}} class="{{className}}" {{/if}}><a href="{{href}}">{{text}}</a></li>
             {{/if}}
             {{/each}}
         </ul>
