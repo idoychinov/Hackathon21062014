@@ -14,7 +14,8 @@
         location: "Синеморец",
         summary: "Плажът на устието на река Валека в Синеморец е превърнат в сметище.",
         category: "Почистване",
-        tags: ["боклук", "почистване", "море", "плаж"]
+        tags: ["боклук", "почистване", "море", "плаж"],
+        finished: false
     }, {
         id: 2,
         date: "16.03.2014",
@@ -25,7 +26,8 @@
         location: "Ловеч",
         summary: "Старият пешеходен мост над реката не може да бъде преминат заради изхвърлени чували.",
         category: "Почистване",
-        tags: ["боклук", "почистване", "реки"]
+        tags: ["боклук", "почистване", "реки"],
+        finished: false
     }, {
         id: 3,
         date: "16.03.2014",
@@ -36,7 +38,8 @@
         location: "София",
         summary: "Пейките при кучешката градинка за изпочипени и имат нужда от боядисване.",
         category: "Почистване",
-        tags: ["парк", "поправка"]
+        tags: ["парк", "поправка"],
+        finished: false
     }, {
         id: 4,
         date: "16.03.2014",
@@ -47,7 +50,8 @@
         location: "В. Търново",
         summary: "Коритото на река Янтра при село Леденик се зиползва за сметище от местна фирма.",
         category: "Почистване",
-        tags: ["боклук", "почистване", "река"]
+        tags: ["боклук", "почистване", "река"],
+        finished: false
     }, {
         id: 5,
         date: "16.03.2014",
@@ -58,7 +62,8 @@
         location: "Кресна",
         summary: "На завоя след село ... някой е изхвърлил голямо количество боклук, което заплашва да запуши реката.",
         category: "Почистване",
-        tags: ["боклук", "почистване", "реки"]
+        tags: ["боклук", "почистване", "реки"],
+        finished: false
     }, {
         id: 6,
         date: "16.03.2014",
@@ -69,7 +74,68 @@
         location: "Тюленово",
         summary: "Плаж тюленово е заринат с боклуци.",
         category: "Почистване",
-        tags: ["боклук", "почистване", "река"]
+        tags: ["боклук", "почистване", "река"],
+        finished: false
+    }, {
+        id: 7,
+        date: "16.03.2014",
+        image: "Resources/images/problems/sea-1.jpg",
+        title: "Замърсен плаж",
+        status: "Неприключен",
+        user: 'LSvilenov',
+        location: "Тюленово",
+        summary: "Плаж тюленово е заринат с боклуци.",
+        category: "Почистване",
+        tags: ["боклук", "почистване", "река"],
+        finished: true
+    }, {
+        id: 8,
+        date: "16.03.2014",
+        image: "Resources/images/problems/sea-1.jpg",
+        title: "Замърсен плаж",
+        status: "Неприключен",
+        user: 'LSvilenov',
+        location: "Тюленово",
+        summary: "Плаж тюленово е заринат с боклуци.",
+        category: "Почистване",
+        tags: ["боклук", "почистване", "река"],
+        finished: true
+    }, {
+        id: 9,
+        date: "16.03.2014",
+        image: "Resources/images/problems/sea-1.jpg",
+        title: "Замърсен плаж",
+        status: "Неприключен",
+        user: 'LSvilenov',
+        location: "Тюленово",
+        summary: "Плаж тюленово е заринат с боклуци.",
+        category: "Почистване",
+        tags: ["боклук", "почистване", "река"],
+        finished: true
+    }, {
+        id: 10,
+        date: "16.03.2014",
+        image: "Resources/images/problems/sea-1.jpg",
+        title: "Замърсен плаж",
+        status: "Неприключен",
+        user: 'LSvilenov',
+        location: "Тюленово",
+        summary: "Плаж тюленово е заринат с боклуци.",
+        category: "Почистване",
+        tags: ["боклук", "почистване", "река"],
+        finished: true
+    }, {
+        id: 11,
+        date: "16.03.2014",
+        image: "Resources/images/problems/sea-1.jpg",
+        title: "Замърсен плаж",
+        status: "Неприключен",
+        user: 'LSvilenov',
+        location: "Тюленово",
+        summary: "Плаж тюленово е заринат с боклуци.",
+        category: "Почистване",
+        tags: ["боклук", "почистване", "река"],
+        finished: true
     }];
 
     problemsListContainer = document.getElementById('problem-items-container');

@@ -19,6 +19,7 @@
     <script id="problems-list-template" type='text/x-handlebars-template'>
         <ul class="problems-list">
             {{#problems}}
+            {{#unless finished}}
             <li class="problem-item">
                 <a href="#" data-id="{{id}}">
                     <strong class="problem-title">{{title}}</strong><span class="author">by {{user}}</span>
@@ -26,6 +27,7 @@
                     <span>{{location}}</span>
                 </a>
             </li>
+            {{/unless}}
             {{/problems}}
         </ul>
     </script>
@@ -39,7 +41,7 @@
         </div>
     </script>
     <script src="Scripts/libs/handlebars.min.js"></script>
-    <script src="Scripts/current-problems.js"></script>
+    <script src="Scripts/problems.js"></script>
 
     <script>
         MainJS.loadStaticContent(true);

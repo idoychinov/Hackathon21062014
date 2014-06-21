@@ -2,17 +2,46 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
-    <script src="Scripts/libs/jquery-2.1.1.min.js"></script>
-    <script src="Scripts/libs/handlebars.min.js"></script>
-    <script src="Scripts/main.js"></script>
     <link href="Styles/main.css" rel="stylesheet" />
+    <script src="Scripts/libs/jquery-2.1.1.min.js"></script>
+    <script src="Scripts/main.js"></script>
 </head>
 <body>
     <div id="wrapper">
 
 
-    </div>
 
+        <div id="problem-items-container">
+        </div>
+        <div id="problem-details-container">
+        </div>
+    </div>
+    <script id="problems-list-template" type='text/x-handlebars-template'>
+        <ul class="problems-list">
+            {{#problems}}
+            {{#if finished}}
+            <li class="problem-item">
+                <a href="#" data-id="{{id}}">
+                    <strong class="problem-title">{{title}}</strong><span class="author">by {{user}}</span>
+                    <span>{{date}}</span>
+                    <span>{{location}}</span>
+                </a>
+            </li>
+            {{/if}}
+            {{/problems}}
+        </ul>
+    </script>
+    <script id="problem-details-template" type='text/x-handlebars-template'>
+        <div class="problem-details">
+            <h2 class="problem-title">
+                {{title}}
+            </h2>
+            <img src="{{{image}}}" alt="Alternate Text" />
+            <p>{{summary}}</p>
+        </div>
+    </script>
+    <script src="Scripts/libs/handlebars.min.js"></script>
+    <script src="Scripts/problems.js"></script>
 
     <script>
         MainJS.loadStaticContent(true);
