@@ -15,12 +15,7 @@
             <div id="logo">Somе logo here</div>
             <div id="site-name">Site name here</div>
             <div id="user-section"></div>
-            <nav id="main-nav">
-                <ul>
-                    <li><a href="index.html">Начало</a></li>
-                    <li><a href="index.html">Подай Сигнал</a></li>
-                </ul>
-            </nav>
+            <nav id="main-nav"></nav>
 
         </header>
         <section id="slider-section">
@@ -135,20 +130,7 @@
                 <p>Предложи инициатива за по-добър живот. Разгледай и се включи в текуща кауза.</p>
             </div>
         </section>
-        <footer>
-            <ul>
-                <li>За нас</li>
-                <li>
-                    Проблеми
-                    <ul>
-                        <li>Текущи</li>
-                        <li>Разрешени</li>
-                    </ul>
-                </li>
-                <li>Инициативи</li>
-                <li>Правила за ползване</li>
-            </ul>
-        </footer>
+        
     </div>
     <script src="Scripts/main-slider.js"></script>
     <script id="user-section-template" type="text/x-handlebars-template">
@@ -167,6 +149,16 @@
         <a id="log-in-button" href="#">Вход</a>
         <a id="register-button" href="#">Регистрация</a>
         {{/unless}}
+    </script>
+
+    <script id="main-nav-template" type="text/x-handlebars-template">
+        <ul>
+            {{#each links}}
+            {{#if display}}
+            <li><a href="{{href}}">{{text}}</a></li>
+            {{/if}}
+            {{/each}}
+        </ul>
     </script>
 </body>
 </html>
