@@ -2,8 +2,8 @@
 var MainJS = (function ($) {
     function loadStaticContent(userLoggedIn) {
         $("#wrapper").prepend($("<header />")
-            .append($("<div />").attr("id", "logo").text("Somе logo here"))
-            .append($("<h1 />").attr("id", "site-name").text("Site name here"))
+            .append($("<div />").attr("id", "logo").append($("<img />").attr("src","").attr("alt","logo")))
+            .append($("<h1 />").attr("id", "site-name").text("mySociety"))
             .append($("<div />").attr("id", "user-section"))
             .append($("<div />").attr("id", "main-nav"))
             );
@@ -17,16 +17,22 @@ var MainJS = (function ($) {
                         .append($("<li />").append($("<a />").attr("href","solved-problems.html").text("Разрешени")))))
                 .append($("<li />").append($("<a />").attr("href","initiatives.html").text("Инициативи")))
                 .append($("<li />").append($("<a />").attr("href","terms.html").text("Правила за ползване")))
-            .append($("<span />").addClass("copyright").text("Team Golden Ages")));
-    var showBtn = $('#show-log-in')
-               .on('click', showLogIn);
+            .append($("<span />").addClass("copyright").text("Team Golden Ages"))));
 
-    function showLogIn() {
-        var logInForm = $('#log-in-form')
-            .removeClass('hidden');
-        showBtn.addClass('hidden');}
+   
+
         loadStaticTemplates();
         loadUserSection(userLoggedIn);
+
+
+        var showBtn = $('#show-log-in')
+              .on('click', showLogIn);
+
+        function showLogIn() {
+            var logInForm = $('#log-in-form')
+                .removeClass('hidden');
+            showBtn.addClass('hidden');
+        }
         
     }
     
@@ -70,12 +76,17 @@ var MainJS = (function ($) {
             '<a id="exit-button" href="#">Изохд</a>',
             '{{/if}}',
             '{{#unless registered}}',
+            '<div id="log-in">',
+            '<div id="log-in-form" class="hidden">',
             '<label for="user-name">Потребителско име:</label>',
             '<input id="user-name" type="text" />',
             '<label for="user-password">Парола:</label>',
             '<input id="user-password" type="text" />',
-            '<a id="log-in-button" href="#">Вход</a>',
+            '<a id="log-in-button" href="#">Влез</a>',
+            '</div>',
+            '<a id="show-log-in" href="#">Вход</a>',
             '<a id="register-button" href="#">Регистрация</a>',
+            '</div>',
             '{{/unless}}',
             '</script> '].join('\n'),
            mainNavTemplate = [
@@ -83,7 +94,7 @@ var MainJS = (function ($) {
             '<ul>',
             '{{#each links}}',
             '{{#if display}}',
-            '<li><a href="{{href}}">{{text}}</a></li>',
+            '<li class="{{className}}"><a href="{{href}}">{{text}}</a></li>',
             '{{/if}}',
             '{{/each}}',
             '</ul>',
