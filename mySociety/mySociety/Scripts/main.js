@@ -8,17 +8,23 @@ var MainJS = (function ($) {
             .append($("<div />").attr("id", "main-nav"))
             );
 
-        $("#wrapper").append($("<footer />")
-            .append($("<ul />")
+    $("#wrapper").append($("<footer />")
+        .append($("<ul />")
                 .append($("<li />").append($("<a />").attr("href","about.html").text("За нас")))
-                .append($("<li />").text("Проблеми")
-                    .append($("<ul />")
+            .append($("<li />").text("Проблеми")
+                .append($("<ul />")
                         .append($("<li />").append($("<a />").attr("href","current-problems.html").text("Текущи")))
                         .append($("<li />").append($("<a />").attr("href","solved-problems.html").text("Разрешени")))))
                 .append($("<li />").append($("<a />").attr("href","initiatives.html").text("Инициативи")))
                 .append($("<li />").append($("<a />").attr("href","terms.html").text("Правила за ползване")))
-            ))
+            .append($("<span />").addClass("copyright").text("Team Golden Ages")));
+    var showBtn = $('#show-log-in')
+               .on('click', showLogIn);
 
+    function showLogIn() {
+        var logInForm = $('#log-in-form')
+            .removeClass('hidden');
+        showBtn.addClass('hidden');}
         loadStaticTemplates();
         loadUserSection(userLoggedIn);
         
@@ -27,7 +33,7 @@ var MainJS = (function ($) {
 
     function loadUserSection(isLoggedIn) {
         var template = Handlebars.compile($("#user-section-template").html());
-        
+
         if (isLoggedIn) {
             $("#user-section").html(template({ registered: true, user: "Пешо" }));
             addEvents("#exit-button", false);
@@ -47,8 +53,7 @@ var MainJS = (function ($) {
 
     function loadMainNav(isLoggedIn) {
         var links = [
-            { display: true, href: "index.html", text: "Начало" },
-            { display: true, href: "signal.html", text: "Подай Сигнал" },
+            { display: true, href: "signal.html", text: "Подай Сигнал", className: "signal-btn" },
             { display: isLoggedIn, href: "your-signals.html", text: "Твойте Сигнали" },
         ],
         template = Handlebars.compile($("#main-nav-template").html());
