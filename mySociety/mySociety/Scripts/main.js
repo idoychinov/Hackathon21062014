@@ -3,7 +3,7 @@ var MainJS = (function ($) {
     function loadStaticContent(userLoggedIn) {
         $("#wrapper").prepend($("<header />")
             .append($("<div />").attr("id", "logo").append($("<img />").attr("src","").attr("alt","logo")))
-            .append($("<h1 />").attr("id", "site-name").text("mySociety"))
+            .append($("<a />").attr("id", "site-name").attr("href", "index.html").text("mySociety"))
             .append($("<div />").attr("id", "user-section"))
             .append($("<div />").attr("id", "main-nav"))
             );

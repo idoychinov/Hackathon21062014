@@ -24,10 +24,11 @@ body {
     padding-right:5px;
 }
 
-h1#site-name {
+a#site-name {
   font-size:2.5em;
   float:left;
   margin-right:30px;
+  text-decoration: none;
 }
 #main-nav {
     min-width:250px;
