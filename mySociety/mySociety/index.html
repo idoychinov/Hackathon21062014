@@ -15,12 +15,7 @@
             <div id="logo">Somе logo here</div>
             <div id="site-name">Site name here</div>
             <div id="user-section"></div>
-            <nav id="main-nav">
-                <ul>
-                    <li><a href="index.html">Начало</a></li>
-                    <li><a href="index.html">Подай Сигнал</a></li>
-                </ul>
-            </nav>
+            <nav id="main-nav"></nav>
 
         </header>
         <section id="slider-section">
@@ -62,7 +57,7 @@
                             <!-- Bullet Navigator Skin End -->
                         </div>
                         <div u="thumb">
-                            <img src="Scripts/libs/jssorSlider/img/nested-thumb/landscape.jpg" />
+                            <img src="Resources/images/thumbs/help.jpg" />
                             <div class="title_back"></div>
                             <div class="title">
                                 Текущи проблеми
@@ -91,7 +86,7 @@
                             <!-- Bullet Navigator Skin End -->
                         </div>
                         <div u="thumb">
-                            <img src="Scripts/libs/jssorSlider/img/nested-thumb/motor.jpg" />
+                            <img src="Resources/images/thumbs/success.jpg" />
                             <div class="title_back"></div>
                             <div class="title">
                                 Вашите Успехи
@@ -104,8 +99,8 @@
 
 
                     <div u="slides" style="cursor: move;">
-                        <div u="prototype" class=p style="POSITION: absolute; WIDTH: 200px; HEIGHT: 100px; TOP: 0; LEFT: 0;">
-                            <thumbnailtemplate style="WIDTH: 200px; HEIGHT: 100px; border: none; position: absolute; TOP: 0; LEFT: 0; "></thumbnailtemplate>
+                        <div u="prototype" class=p style="POSITION: absolute; WIDTH: 300px; HEIGHT: 100px; TOP: 0; LEFT: 0;">
+                            <thumbnailtemplate style="WIDTH: 300px; HEIGHT: 100px; border: none; position: absolute; TOP: 0; LEFT: 0; "></thumbnailtemplate>
                         </div>
                     </div>
                     <!-- Thumbnail Item Skin End -->
@@ -135,20 +130,7 @@
                 </a>
             </article>
         </section>
-        <footer>
-            <ul>
-                <li>За нас</li>
-                <li>
-                    Проблеми
-                    <ul>
-                        <li>Текущи</li>
-                        <li>Разрешени</li>
-                    </ul>
-                </li>
-                <li>Инициативи</li>
-                <li>Правила за ползване</li>
-            </ul>
-        </footer>
+        
     </div>
     <script src="Scripts/main-slider.js"></script>
     <script id="user-section-template" type="text/x-handlebars-template">
@@ -167,6 +149,16 @@
         <a id="log-in-button" href="#">Вход</a>
         <a id="register-button" href="#">Регистрация</a>
         {{/unless}}
+    </script>
+
+    <script id="main-nav-template" type="text/x-handlebars-template">
+        <ul>
+            {{#each links}}
+            {{#if display}}
+            <li><a href="{{href}}">{{text}}</a></li>
+            {{/if}}
+            {{/each}}
+        </ul>
     </script>
 </body>
 </html>

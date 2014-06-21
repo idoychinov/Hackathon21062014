@@ -1,6 +1,16 @@
 ﻿/// <reference path="libs/jquery-2.1.1.js" />
 jQuery(document).ready(function ($) {
     loadUserSection(false);
+    $("#wrapper").append($("<footer />")
+        .append($("<ul />")
+            .append($("<li />").text("За нас"))
+            .append($("<li />").text("Проблеми")
+                .append($("<ul />")
+                    .append($("<li />").text("Текущи"))
+                    .append($("<li />").text("Разрешени"))))
+            .append($("<li />").text("Инициативи"))
+            .append($("<li />").text("Правила за ползване"))
+        ))
 
 
     function loadUserSection(isLoggedIn) {
@@ -12,7 +22,6 @@ jQuery(document).ready(function ($) {
         } else {
             $("#user-section").html(template({ registered: false }));
             addEvents("#log-in-button", true);
-            
         }
         loadMainNav(isLoggedIn);
 
@@ -25,10 +34,13 @@ jQuery(document).ready(function ($) {
     }
 
     function loadMainNav(isLoggedIn) {
-        $mainNav = $("#wrapper>header>nav>ul");
-        if (isLoggedIn) {
-            $mainNav.append($("<li />"));
-        }
-        
+        var links = [
+            { display: true, href: "index.html", text: "Начало" },
+            { display: true, href: "signal.html", text: "Подай Сигнал" },
+            { display: isLoggedIn, href: "your-signals.html", text: "Твойте Сигнали" },
+        ],
+        template = Handlebars.compile($("#main-nav-template").html());
+
+        $("#main-nav").html(template({ links: links }));
     }
 })
