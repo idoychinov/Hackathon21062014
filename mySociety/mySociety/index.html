@@ -11,13 +11,6 @@
 </head>
 <body>
     <div id="wrapper">
-        <header>
-            <div id="logo">Somе logo here</div>
-            <div id="site-name">Site name here</div>
-            <div id="user-section"></div>
-            <nav id="main-nav"></nav>
-
-        </header>
         <section id="slider-section">
             <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 600px; height: 400px; overflow: hidden; ">
 
@@ -133,32 +126,8 @@
         
     </div>
     <script src="Scripts/main-slider.js"></script>
-    <script id="user-section-template" type="text/x-handlebars-template">
-        {{#if registered}}
-        Здравей, {{user}}
-        <a id="profile-buttonn" href="#">Профил</a>
-        <a id="exit-button" href="#">Изохд</a>
-        {{/if}}
-        {{#unless registered}}
-        <label for="user-name">Потребителско име:</label>
-        <input id="user-name" type="text" />
-
-        <label for="user-password">Парола:</label>
-        <input id="user-password" type="text" />
-
-        <a id="log-in-button" href="#">Вход</a>
-        <a id="register-button" href="#">Регистрация</a>
-        {{/unless}}
-    </script>
-
-    <script id="main-nav-template" type="text/x-handlebars-template">
-        <ul>
-            {{#each links}}
-            {{#if display}}
-            <li><a href="{{href}}">{{text}}</a></li>
-            {{/if}}
-            {{/each}}
-        </ul>
+    <script>
+        MainJS.loadStaticContent(false);
     </script>
 </body>
 </html>
