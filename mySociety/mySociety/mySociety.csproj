@@ -224,7 +224,9 @@
     <Content Include="Content\kendo\2014.1.318\Uniform\slider-v.gif" />
     <Content Include="Content\kendo\2014.1.318\Uniform\sprite.png" />
     <Content Include="Content\kendo\2014.1.318\Uniform\sprite_2x.png" />
+    <Content Include="current-problems.html" />
     <Content Include="index.html" />
+    <Content Include="initiatives.html" />
     <Content Include="packages.config" />
     <Content Include="Content\kendo\2014.1.318\images\kendoui.woff" />
     <Content Include="Content\kendo\2014.1.318\images\kendoui.ttf" />
@@ -726,6 +728,7 @@
     <Content Include="Scripts\libs\jssorSlider\transitions\caption-transitions%28390%29.html" />
     <Content Include="Scripts\libs\jssorSlider\transitions\slideshow-transition-builder-controller.min.js" />
     <Content Include="Scripts\libs\jssorSlider\transitions\slideshow-transitions%28360%29.html" />
+    <Content Include="solved-problems.html" />
     <Content Include="Styles\main.css" />
     <Content Include="Web.config" />
     <Content Include="Scripts\libs\jquery-2.1.1.min.map" />
