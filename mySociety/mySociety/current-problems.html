@@ -4,12 +4,17 @@
     <title></title>
     <link href="Styles/main.css" rel="stylesheet" />
     <script src="Scripts/libs/jquery-2.1.1.min.js"></script>
-
+    <script src="Scripts/main.js"></script>
 </head>
 <body>
-    <div id="problem-items-container">
-    </div>
-    <div id="problem-details-container">
+    <div id="wrapper">
+
+
+
+        <div id="problem-items-container">
+        </div>
+        <div id="problem-details-container">
+        </div>
     </div>
     <script id="problems-list-template" type='text/x-handlebars-template'>
         <ul class="problems-list">
@@ -35,5 +40,9 @@
     </script>
     <script src="Scripts/libs/handlebars.min.js"></script>
     <script src="Scripts/current-problems.js"></script>
+
+    <script>
+        MainJS.loadStaticContent(true);
+    </script>
 </body>
 </html>
