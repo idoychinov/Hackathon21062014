@@ -135,3 +135,97 @@ footer {
 .hidden {
     display:none;
 }
+
+#problem-items-container,
+#problem-details-container {
+  float: left;
+  margin-top: 25px;
+  margin-left: 10px;
+  padding: 0;
+}
+#problem-items-container {
+  width: 30%;
+}
+#problem-details-container {
+  width: 65%;
+}
+.problems-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.problems-list .problem-item {
+  margin: 0;
+  padding: 5px 15px;
+  border: 1px solid #888;
+  border-top: none;
+  background-color: #add8e6;
+}
+.problems-list .problem-item:first-of-type {
+  border-top: 1px solid #888;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.problems-list .problem-item:last-of-type {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.problems-list .problem-item:hover {
+  background-color: #8ec9dd;
+}
+.problems-list .problem-item a {
+  color: #000;
+  text-decoration: none;
+}
+.problems-list .problem-item a .problem-title {
+  display: block;
+}
+.problems-list .problem-item a .author {
+  float: right;
+}
+.problems-list .problem-item a:after {
+  clear: both;
+  display: block;
+  content: '';
+  height: 0;
+}
+.problem-details {
+  background-color: #add8e6;
+  border: 1px solid #888;
+  border-radius: 5px;
+  padding: 15px;
+}
+.problem-details p {
+  margin: 0;
+}
+.problem-details .problem-title {
+  font-size: 1.7em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.problem-details .isbn {
+  font-style: italic;
+  font-family: 'Consolas';
+}
+.problem-details .isbn:before {
+  content: '(ISBN: ';
+}
+.problem-details .isbn:after {
+  content: ')';
+}
+.problem-details .publish-date {
+  font-style: italic;
+  font-family: 'Consolas';
+  font-weight: 700;
+}
+.problem-details .author {
+  font-size: 1.1em;
+}
+.problem-details .description {
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.problem-item .location {
+    display: inline;
+}
