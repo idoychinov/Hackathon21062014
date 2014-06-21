@@ -231,6 +231,17 @@
     <Content Include="Content\kendo\2014.1.318\images\kendoui.woff" />
     <Content Include="Content\kendo\2014.1.318\images\kendoui.ttf" />
     <None Include="Scripts\libs\jquery-2.1.1.intellisense.js" />
+    <Content Include="Resources\images\Problems\beach.jpg" />
+    <Content Include="Resources\images\Problems\blocked-river.jpg" />
+    <Content Include="Resources\images\Problems\bridge.jpg" />
+    <Content Include="Resources\images\Problems\park.jpg" />
+    <Content Include="Resources\images\Problems\river-1.jpg" />
+    <Content Include="Resources\images\Problems\sea-1.jpg" />
+    <Content Include="Resources\images\Success\bench-painting.jpg" />
+    <Content Include="Resources\images\Success\garbage-collection-1.jpg" />
+    <Content Include="Resources\images\Success\garbage-collection-2.jpg" />
+    <Content Include="Resources\images\Success\garden.jpg" />
+    <Content Include="Resources\images\Success\planed-trees.jpg" />
     <Content Include="Scripts\libs\handlebars.amd.js" />
     <Content Include="Scripts\libs\handlebars.amd.min.js" />
     <Content Include="Scripts\libs\handlebars.js" />
@@ -728,6 +739,8 @@
     <Content Include="Scripts\libs\jssorSlider\transitions\caption-transitions%28390%29.html" />
     <Content Include="Scripts\libs\jssorSlider\transitions\slideshow-transition-builder-controller.min.js" />
     <Content Include="Scripts\libs\jssorSlider\transitions\slideshow-transitions%28360%29.html" />
+    <Content Include="Scripts\main-slider.js" />
+    <Content Include="Scripts\main.js" />
     <Content Include="solved-problems.html" />
     <Content Include="Styles\main.css" />
     <Content Include="Web.config" />
@@ -789,9 +802,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\images\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
