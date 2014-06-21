@@ -242,6 +242,8 @@
     <Content Include="Resources\images\Success\garbage-collection-2.jpg" />
     <Content Include="Resources\images\Success\garden.jpg" />
     <Content Include="Resources\images\Success\planed-trees.jpg" />
+    <Content Include="Resources\images\thumbs\help.jpg" />
+    <Content Include="Resources\images\thumbs\success.jpg" />
     <Content Include="Scripts\libs\handlebars.amd.js" />
     <Content Include="Scripts\libs\handlebars.amd.min.js" />
     <Content Include="Scripts\libs\handlebars.js" />
