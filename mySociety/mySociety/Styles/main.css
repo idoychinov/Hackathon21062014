@@ -1,2 +1,56 @@
-﻿body {
+﻿body, header, nav, section, footer, article, div, a, p, h1, ul, li {
+    margin:0;
+    padding:0;
+}
+body {
+    width:100%;
+    font-family: Calibri, Arial, sans-serif;
+    font-size:16px;
+    position:relative;
+}
+
+#wrapper {
+    width:1200px;
+    position:relative;
+    margin: 0 auto;
+}
+
+#slider-section {
+    position:relative;
+    margin: 0 300px;
+
+}
+#main-content {
+    width:1200px;
+    position:relative;
+    text-align:center;
+    margin:20px 0;
+}
+
+.main-article {
+    display:inline-block;
+    width: 350px;
+    height: 80px;
+    vertical-align:top;
+    padding: 5px 15px;
+    text-align:left;
+    border-radius:5px;
+}
+    .main-article:hover {
+        background: rgba(0, 0, 0, 0.1);
+    }
+    .main-article h1 {
+        color:black;
+    }
+    .main-article p {
+        text-align:justify;
+        color:grey;
+    }
+       .main-article a {
+        text-decoration:none;      
+    }
+
+footer {
+    border-top: 1px solid black;
+    font-size: 0.8rem;
 }
