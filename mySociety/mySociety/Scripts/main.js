@@ -2,8 +2,8 @@
 var MainJS = (function ($) {
     function loadStaticContent(userLoggedIn) {
         $("#wrapper").prepend($("<header />")
-            .append($("<div />").attr("id", "logo").append($("<img />").attr("src", "").attr("alt", "logo")))
-            .append($("<h1 />").attr("id", "site-name").text("mySociety"))
+            .append($("<div />").attr("id", "logo").append($("<img />").attr("src","").attr("alt","logo")))
+            .append($("<a />").attr("id", "site-name").attr("href", "index.html").text("mySociety"))
             .append($("<div />").attr("id", "user-section"))
             .append($("<div />").attr("id", "main-nav"))
             );
@@ -19,7 +19,7 @@ var MainJS = (function ($) {
         //            .append($("<li />").append($("<a />").attr("href", "terms.html").text("Правила за ползване")))
         //        .append($("<span />").addClass("copyright").text("Team Golden Ages"))));
 
-
+   
 
         loadStaticTemplates();
         loadUserSection(userLoggedIn);
@@ -33,9 +33,9 @@ var MainJS = (function ($) {
                 .removeClass('hidden');
             showBtn.addClass('hidden');
         }
-
+        
     }
-
+    
 
     function loadUserSection(isLoggedIn) {
         var template = Handlebars.compile($("#user-section-template").html());

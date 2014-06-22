@@ -14,7 +14,7 @@ body {
     position:relative;
     margin: 0 auto;
 }
-header {
+ header {
      height:50px;
      background:#D2D7D9;
       box-shadow: 10px 10px 5px #888888;
@@ -28,7 +28,7 @@ header {
     padding-right:5px;
 }
 
-h1#site-name {
+a#site-name {
   font-size:2.5em;
   float:left;
   margin-right:30px;
@@ -49,50 +49,50 @@ h1#site-name {
 
 }
 
-    #main-nav ul {
-        list-style-type:none;
+#main-nav ul {
+    list-style-type:none;
         margin: 0px 10px;
-    }
-        #main-nav ul li {
-            padding:10px;
-            display:inline-block;
+}
+#main-nav ul li {
+    padding:10px;
+    display:inline-block;
             background-color:#50656B;
             margin-top:13px;
             box-shadow: 10px 10px 5px #888888;
             font-weight:bold;
             
-        }
+}
             #main-nav ul li:hover {
             background-color:#8ec9dd;
             }
         
-            #main-nav ul li.signal-btn {
+#main-nav ul li.signal-btn {
             background-color:#e4a819;
-            font-weight:bold;
-        }
+    font-weight:bold;
+}
             #main-nav ul li.signal-btn:hover {
             background-color:#f2c864;
             }
 
-    #main-nav a {
-        text-decoration: none;
-        color:black;
-    }
+#main-nav a {
+    text-decoration: none;
+    color:black;
+}
 
-    #log-in,
-    #user-section {
+#log-in,
+#user-section {
         position: absolute;
-        right:0;
-        top:0;
-    }
-    #log-in-form {
+    right:0;
+    top:0;
+}
+#log-in-form {
             position:relative;
             z-index:2;
             box-shadow: 10px 10px 5px #888888;
+}
+    #log-in-form input{
+        display:block;
     }
-        #log-in-form input{
-            display:block;
-        }
     #user-section {
         padding-right:5px;
     }
@@ -117,7 +117,7 @@ h1#site-name {
 #slider1_container {
     border: 7px solid rgba(20,48,56, 0.5);
 
-    }
+}
 #main-content {
     width:1200px;
     position:relative;

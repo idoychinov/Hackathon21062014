@@ -18,7 +18,7 @@
         finished: false
     }, {
         id: 2,
-        date: "16.03.2014",
+        date: "6.05.2014",
         image: "Resources/images/problems/bridge.jpg",
         title: "Блокиран мост",
         status: "Неприключен",
@@ -30,7 +30,7 @@
         finished: false
     }, {
         id: 3,
-        date: "16.03.2014",
+        date: "17.09.2013",
         image: "Resources/images/problems/park.jpg",
         title: "Изпочупени пейки",
         status: "Неприключен",
@@ -42,7 +42,7 @@
         finished: false
     }, {
         id: 4,
-        date: "16.03.2014",
+        date: "26.03.2014",
         image: "Resources/images/problems/river-1.jpg",
         title: "Нерегламентирано сметище",
         status: "Неприключен",
@@ -54,7 +54,7 @@
         finished: false
     }, {
         id: 5,
-        date: "16.03.2014",
+        date: "14.05.2009",
         image: "Resources/images/problems/blocked-river.jpg",
         title: "Запушен канал",
         status: "Неприключен",
@@ -78,22 +78,22 @@
         finished: false
     }, {
         id: 7,
-        date: "16.03.2014",
-        image: "Resources/images/problems/sea-1.jpg",
-        title: "Замърсен плаж",
-        status: "Неприключен",
-        user: 'LSvilenov',
-        location: "Тюленово",
-        summary: "Плаж тюленово е заринат с боклуци.",
-        category: "Почистване",
-        tags: ["боклук", "почистване", "река"],
+        date: "06.06.2014",
+        image: "Resources/images/Success/bench-painting.jpg",
+        title: "Разкрасяване на пейките в Западния парк",
+        status: "Приключен",
+        user: 'Пешо',
+        location: "София",
+        summary: "Екип от 7 доброволеца се събра и за един уикенд успя да лакира и боядиса 20 пейки по централната алея на Западния парк.",
+        category: "Разкрасяване",
+        tags: ["парк", "боядисване"],
         finished: true
     }, {
         id: 8,
         date: "16.03.2014",
-        image: "Resources/images/problems/sea-1.jpg",
-        title: "Замърсен плаж",
-        status: "Неприключен",
+        image: "Resources/images/Success/garbage-collection-1.jpg",
+        title: "Почистване на Витоша",
+        status: "Приключен",
         user: 'LSvilenov',
         location: "Тюленово",
         summary: "Плаж тюленово е заринат с боклуци.",
@@ -103,9 +103,9 @@
     }, {
         id: 9,
         date: "16.03.2014",
-        image: "Resources/images/problems/sea-1.jpg",
-        title: "Замърсен плаж",
-        status: "Неприключен",
+        image: "Resources/images/Success/garbage-collection-2.jpg",
+        title: "Събиране на боклук в Стара Планина",
+        status: "Приключен",
         user: 'LSvilenov',
         location: "Тюленово",
         summary: "Плаж тюленово е заринат с боклуци.",
@@ -115,9 +115,9 @@
     }, {
         id: 10,
         date: "16.03.2014",
-        image: "Resources/images/problems/sea-1.jpg",
-        title: "Замърсен плаж",
-        status: "Неприключен",
+        image: "Resources/images/Success/garden.jpg",
+        title: "Засаждане на цветя",
+        status: "Приключен",
         user: 'LSvilenov',
         location: "Тюленово",
         summary: "Плаж тюленово е заринат с боклуци.",
@@ -127,9 +127,9 @@
     }, {
         id: 11,
         date: "16.03.2014",
-        image: "Resources/images/problems/sea-1.jpg",
-        title: "Замърсен плаж",
-        status: "Неприключен",
+        image: "Resources/images/Success/planed-trees.jpg",
+        title: "Засаждане на фиданки",
+        status: "Приключен",
         user: 'LSvilenov',
         location: "Тюленово",
         summary: "Плаж тюленово е заринат с боклуци.",
