@@ -240,6 +240,7 @@
     <Content Include="Resources\images\Problems\park.jpg" />
     <Content Include="Resources\images\Problems\river-1.jpg" />
     <Content Include="Resources\images\Problems\sea-1.jpg" />
+    <Content Include="Resources\images\Success\bautified-beach.jpg" />
     <Content Include="Resources\images\Success\bench-painting.jpg" />
     <Content Include="Resources\images\Success\garbage-collection-1.jpg" />
     <Content Include="Resources\images\Success\garbage-collection-2.jpg" />
