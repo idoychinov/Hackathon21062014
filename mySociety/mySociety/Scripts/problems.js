@@ -165,7 +165,7 @@
         problems: problems
     });
     //initially show the first problem in the list
-    problemDetailsContainer.innerHTML = problemDetailsTemplate(problems[0]);
+    //problemDetailsContainer.innerHTML = problemDetailsTemplate(problems[0]);
 
 
     function findParentOfType(el, type, beforeEl) {
