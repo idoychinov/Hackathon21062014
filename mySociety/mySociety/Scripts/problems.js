@@ -136,6 +136,18 @@
         category: "Почистване",
         tags: ["боклук", "почистване", "река"],
         finished: true
+    }, {
+        id: 12,
+        date: "20.05.2014",
+        image: "Resources/images/Success/bautified-beach.jpg",
+        title: "Почистен плаж",
+        status: "Приключен",
+        user: 'LSvilenov',
+        location: "Силистар",
+        summary: "Обществено отговорна фирма почисти плажът и след това служителите оформиха този надпис.",
+        category: "Почистване",
+        tags: ["боклук", "почистване", "плаж"],
+        finished: true
     }];
 
     problemsListContainer = document.getElementById('problem-items-container');
