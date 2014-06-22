@@ -186,7 +186,7 @@
         problem = findById(id, problems);
         problemDetailsContainer.innerHTML = problemDetailsTemplate(problem);
     }
-    problemsListContainer.addEventListener('click', function (ev) {
+    problemsListContainer.addEventListener('mouseover', function (ev) {
         var problemItem, target;
         ev = ev || window.event;
         target = ev.target;

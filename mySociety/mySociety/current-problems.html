@@ -8,13 +8,11 @@
 </head>
 <body>
     <div id="wrapper">
-
-
-
         <div id="problem-items-container">
         </div>
         <div id="problem-details-container">
         </div>
+        <footer></footer>
     </div>
     <script id="problems-list-template" type='text/x-handlebars-template'>
         <ul class="problems-list">
@@ -40,11 +38,17 @@
             <p>{{summary}}</p>
         </div>
     </script>
+
     <script src="Scripts/libs/handlebars.min.js"></script>
     <script src="Scripts/problems.js"></script>
 
     <script>
         MainJS.loadStaticContent(true);
+        $(document).ready(function () {
+            //$("header").load("header.html");
+            $("footer").load("footer.html");
+            $('#slider-section').load("slider-main.html");
+        });
     </script>
 </body>
 </html>

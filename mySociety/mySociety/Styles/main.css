@@ -14,9 +14,13 @@ body {
     position:relative;
     margin: 0 auto;
 }
- header {
-     height:80px;
+header {
+     height:50px;
+     background:#D2D7D9;
+      box-shadow: 10px 10px 5px #888888;
+     z-index:4;
  }
+
 #logo img {
     width:50px;
     height:50px;
@@ -28,47 +32,92 @@ h1#site-name {
   font-size:2.5em;
   float:left;
   margin-right:30px;
+  color:#50656B;
+}
+#search {
+    border:1px solid grey;
+    border-radius:5px;
+    height:30px;
+    box-shadow: 10px 10px 5px #888888;
+    margin-top:13px;
+}
+#search:focus {
+    outline:none;
 }
 #main-nav {
     min-width:250px;
+
 }
 
-#main-nav ul {
-    list-style-type:none;
-    margin: 10px 10px;
-}
-#main-nav ul li {
-    padding:10px;
-    display:inline-block;
-    background-color:#ffd800;
-}
-#main-nav ul li.signal-btn {
-    background-color:#ff0000;
-    font-weight:bold;
-}
+    #main-nav ul {
+        list-style-type:none;
+        margin: 0px 10px;
+    }
+        #main-nav ul li {
+            padding:10px;
+            display:inline-block;
+            background-color:#50656B;
+            margin-top:13px;
+            box-shadow: 10px 10px 5px #888888;
+            font-weight:bold;
+            
+        }
+            #main-nav ul li:hover {
+            background-color:#8ec9dd;
+            }
+        
+            #main-nav ul li.signal-btn {
+            background-color:#e4a819;
+            font-weight:bold;
+        }
+            #main-nav ul li.signal-btn:hover {
+            background-color:#f2c864;
+            }
 
-#main-nav a {
-    text-decoration: none;
-    color:black;
-}
+    #main-nav a {
+        text-decoration: none;
+        color:black;
+    }
 
-#log-in,
-#user-section {
+    #log-in,
+    #user-section {
         position: absolute;
-    right:0;
-    top:0;
-}
-#log-in-form {
-
-}
-    #log-in-form input{
-        display:block;
+        right:0;
+        top:0;
+    }
+    #log-in-form {
+            position:relative;
+            z-index:2;
+            box-shadow: 10px 10px 5px #888888;
+    }
+        #log-in-form input{
+            display:block;
+        }
+    #user-section {
+        padding-right:5px;
+    }
+    #user-section a {
+        color:#50656B;
     }
 #slider-section {
     position:relative;
-    margin: 0 300px;
-
+    padding: 0 300px;
+    margin-top:20px;
+    box-shadow: 10px 10px 5px #888888;
+    background: #ffffff;
+    background: -moz-linear-gradient(left,  #ffffff 0%, #143038 51%, #ffffff 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(51%,#143038), color-stop(100%,#ffffff));
+    background: -webkit-linear-gradient(left,  #ffffff 0%,#143038 51%,#ffffff 100%);
+    background: -o-linear-gradient(left,  #ffffff 0%,#143038 51%,#ffffff 100%);
+    background: -ms-linear-gradient(left,  #ffffff 0%,#143038 51%,#ffffff 100%);
+    background: linear-gradient(to right,  #ffffff 0%,#143038 51%,#ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 );
+    z-index:1;
 }
+#slider1_container {
+    border: 7px solid rgba(20,48,56, 0.5);
+
+    }
 #main-content {
     width:1200px;
     position:relative;
@@ -81,12 +130,13 @@ h1#site-name {
     width: 350px;
     height: 80px;
     vertical-align:top;
-    padding: 5px 15px;
+    padding: 10px 15px;
     text-align:left;
     border-radius:5px;
+    box-shadow: 10px 10px 5px #888888;
 }
     .main-article:hover {
-        background: rgba(0, 0, 0, 0.1);
+        background: #E4E7E8;
     }
     .main-article h1 {
         color:black;
@@ -100,8 +150,9 @@ h1#site-name {
     }
 
 footer {
-    border-top: 1px solid black;
     font-size: 0.8rem;
+    color:grey;
+    clear:both;
 }
 
     footer ul {
@@ -111,23 +162,28 @@ footer {
 
         footer ul li {
             display:inline-block;
-            border-right: 1px solid black;
+            border-right: 1px solid grey;
             padding:3px 5px;
+            float:left;
         }
             footer ul li:last-of-type {
                 border: none;
             }
-            footer ul li ul {
+            footer ul li a {
+            color:grey;
+        }
+            /*footer ul li ul {
                 position:absolute;
             }
                 footer ul li ul li {
                 display:block;
                 padding-left:5px;
                 border: none;
-            }
+            }*/
     footer .copyright {
         margin-right:5px;
         position:absolute;
+        float:right;
         right:0;
 
     }
@@ -142,12 +198,20 @@ footer {
   margin-top: 25px;
   margin-left: 10px;
   padding: 0;
+    box-shadow: 10px 10px 5px #888888;
+      margin-bottom:20px;
 }
 #problem-items-container {
-  width: 30%;
+  width: 32%;
 }
 #problem-details-container {
   width: 65%;
+}
+#problem-details-container:after {
+    clear: both;
+  display: block;
+  content: '';
+  height: 0;
 }
 .problems-list {
   margin: 0;
@@ -159,7 +223,7 @@ footer {
   padding: 5px 15px;
   border: 1px solid #888;
   border-top: none;
-  background-color: #add8e6;
+  background-color: #50656B;
 }
 .problems-list .problem-item:first-of-type {
   border-top: 1px solid #888;
@@ -190,40 +254,24 @@ footer {
   height: 0;
 }
 .problem-details {
-  background-color: #add8e6;
+  background-color: #50656B;
   border: 1px solid #888;
   border-radius: 5px;
   padding: 15px;
+  min-height:263px;
 }
 .problem-details p {
   margin: 0;
+}
+.problem-details img {
+    height:200px;
+    float:left;
+    margin-right:10px;
 }
 .problem-details .problem-title {
   font-size: 1.7em;
   margin-top: 0;
   margin-bottom: 10px;
-}
-.problem-details .isbn {
-  font-style: italic;
-  font-family: 'Consolas';
-}
-.problem-details .isbn:before {
-  content: '(ISBN: ';
-}
-.problem-details .isbn:after {
-  content: ')';
-}
-.problem-details .publish-date {
-  font-style: italic;
-  font-family: 'Consolas';
-  font-weight: 700;
-}
-.problem-details .author {
-  font-size: 1.1em;
-}
-.problem-details .description {
-  margin-top: 10px;
-  text-align: justify;
 }
 
 .problem-item .location {

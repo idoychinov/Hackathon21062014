@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="Styles/main.css" rel="stylesheet" />
+    <script src="Scripts/libs/jquery-2.1.1.min.js"></script>
+    <script src="Scripts/libs/handlebars.min.js"></script>
+    <script src="Scripts/problems.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="problem-container"></div>
+        <script id="problem-template" type='text/x-handlebars-template'>
+            {{#problems}}
+            <h2>{{title}}</h2>
+            <span>{{date}}</span>
+            <span>{{location}}</span>
+            <span class="author">by {{user}}</span>
+            {{/problems}}
+        </script>
+</div>
+    <script>
+        var problemContainer = document.getElementById('problem-container');
+
+        problemTemplate = Handlebars.compile((document.getElementById('problem-template')).innerHTML);
+        problemContainer.innerHTML = problemTemplate({
+            problems: problems
+        });
+    </script>
+</body>
+</html>

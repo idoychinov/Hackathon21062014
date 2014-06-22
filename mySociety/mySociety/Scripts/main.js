@@ -2,24 +2,24 @@
 var MainJS = (function ($) {
     function loadStaticContent(userLoggedIn) {
         $("#wrapper").prepend($("<header />")
-            .append($("<div />").attr("id", "logo").append($("<img />").attr("src","").attr("alt","logo")))
+            .append($("<div />").attr("id", "logo").append($("<img />").attr("src", "").attr("alt", "logo")))
             .append($("<h1 />").attr("id", "site-name").text("mySociety"))
             .append($("<div />").attr("id", "user-section"))
             .append($("<div />").attr("id", "main-nav"))
             );
 
-    $("#wrapper").append($("<footer />")
-        .append($("<ul />")
-                .append($("<li />").append($("<a />").attr("href","about.html").text("За нас")))
-            .append($("<li />").text("Проблеми")
-                .append($("<ul />")
-                        .append($("<li />").append($("<a />").attr("href","current-problems.html").text("Текущи")))
-                        .append($("<li />").append($("<a />").attr("href","solved-problems.html").text("Разрешени")))))
-                .append($("<li />").append($("<a />").attr("href","initiatives.html").text("Инициативи")))
-                .append($("<li />").append($("<a />").attr("href","terms.html").text("Правила за ползване")))
-            .append($("<span />").addClass("copyright").text("Team Golden Ages"))));
+        //$("#wrapper").append($("<footer />")
+        //    .append($("<ul />")
+        //            .append($("<li />").append($("<a />").attr("href", "about.html").text("За нас")))
+        //        .append($("<li />").text("Проблеми")
+        //            .append($("<ul />")
+        //                    .append($("<li />").append($("<a />").attr("href", "current-problems.html").text("Текущи")))
+        //                    .append($("<li />").append($("<a />").attr("href", "solved-problems.html").text("Разрешени")))))
+        //            .append($("<li />").append($("<a />").attr("href", "initiatives.html").text("Инициативи")))
+        //            .append($("<li />").append($("<a />").attr("href", "terms.html").text("Правила за ползване")))
+        //        .append($("<span />").addClass("copyright").text("Team Golden Ages"))));
 
-   
+
 
         loadStaticTemplates();
         loadUserSection(userLoggedIn);
@@ -33,9 +33,9 @@ var MainJS = (function ($) {
                 .removeClass('hidden');
             showBtn.addClass('hidden');
         }
-        
+
     }
-    
+
 
     function loadUserSection(isLoggedIn) {
         var template = Handlebars.compile($("#user-section-template").html());
@@ -60,7 +60,9 @@ var MainJS = (function ($) {
     function loadMainNav(isLoggedIn) {
         var links = [
             { display: true, href: "signal.html", text: "Подай Сигнал", className: "signal-btn" },
+            { display: true, href: "current-problems.html", text: "Помогни", className: "signal-btn" },
             { display: isLoggedIn, href: "your-signals.html", text: "Твойте Сигнали" },
+            { display: isLoggedIn, href: "#", text: "Съобщения" }
         ],
         template = Handlebars.compile($("#main-nav-template").html());
 

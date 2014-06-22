@@ -225,12 +225,15 @@
     <Content Include="Content\kendo\2014.1.318\Uniform\sprite.png" />
     <Content Include="Content\kendo\2014.1.318\Uniform\sprite_2x.png" />
     <Content Include="current-problems.html" />
+    <Content Include="footer.html" />
+    <Content Include="header.html" />
     <Content Include="index.html" />
     <Content Include="initiatives.html" />
     <Content Include="packages.config" />
     <Content Include="Content\kendo\2014.1.318\images\kendoui.woff" />
     <Content Include="Content\kendo\2014.1.318\images\kendoui.ttf" />
     <None Include="Scripts\libs\jquery-2.1.1.intellisense.js" />
+    <Content Include="problem-template.html" />
     <Content Include="Resources\images\Problems\beach.jpg" />
     <Content Include="Resources\images\Problems\blocked-river.jpg" />
     <Content Include="Resources\images\Problems\bridge.jpg" />
@@ -244,6 +247,7 @@
     <Content Include="Resources\images\Success\planed-trees.jpg" />
     <Content Include="Resources\images\thumbs\help.jpg" />
     <Content Include="Resources\images\thumbs\success.jpg" />
+    <Content Include="Resources\logo.png" />
     <Content Include="Scripts\problems.js" />
     <Content Include="Scripts\libs\handlebars.amd.js" />
     <Content Include="Scripts\libs\handlebars.amd.min.js" />
@@ -744,6 +748,8 @@
     <Content Include="Scripts\libs\jssorSlider\transitions\slideshow-transitions%28360%29.html" />
     <Content Include="Scripts\main-slider.js" />
     <Content Include="Scripts\main.js" />
+    <Content Include="signal.html" />
+    <Content Include="slider-main.html" />
     <Content Include="solved-problems.html" />
     <Content Include="Styles\main-slider.css" />
     <Content Include="Styles\main.css" />
