@@ -1,38 +1,39 @@
-﻿<div id="logo">
-    <a href="index.html"><img src="Resources/logo.png" alt="logo" /></a>
-</div>
-<a href="index.html"><h1 id="site-name">mySociety</h1></a>
-<input id="search" type="text" placeholder="Търси..." />
-<nav id="main-nav">
+﻿    <div id="logo">
+        <a href="index.html"><img src="Resources/logo.png" alt="logo" /></a>
+    </div>
+    <a href="index.html"><h1 id="site-name">mySociety</h1></a>
+    <input id="search" type="text" placeholder="Търси..." />
+    <nav id="main-nav">
+
+
+    </nav>
     <div id="user-section"></div>
-    <script id="main-nav-template" type="text/x-handlebars-template">
-        <ul>
-            {{#each links}}
-            {{#if display}}
-            <li class="{{className}}"><a href="{{href}}">{{text}}</a></li>
-            {{/if}}
-            {{/each}}
-        </ul>
-    </script>
-    <script id="user-section-template" type="text/x-handlebars-template">
-        {{#if registered}}
-        Здравей, {{user}}
-        <a id="profile-buttonn" href="#">Профил</a>
-        <a id="exit-button" href="#">Изохд</a>
+<script id="main-nav-template" type="text/x-handlebars-template">
+    <ul>
+        {{#each links}}
+        {{#if display}}
+        <li class="{{className}}"><a href="{{href}}">{{text}}</a></li>
         {{/if}}
-        {{#unless registered}}
-        <div id="log-in">
-            <div id="log-in-form" class="hidden">
-                <label for="user-name">Потребителско име:</label>
-                <input id="user-name" type="text" />
-                <label for="user-password">Парола:</label>
-                <input id="user-password" type="text" />
-                <a id="log-in-button" href="#">Влез</a>
-            </div>
-            <a id="show-log-in" href="#">Вход</a>
-            <a id="register-button" href="#">Регистрация</a>
+        {{/each}}
+    </ul>
+</script>
+<script id="user-section-template" type="text/x-handlebars-template">
+    {{#if registered}}
+    Здравей, {{user}}
+    <a id="profile-buttonn" href="#">Профил</a>
+    <a id="exit-button" href="#">Изохд</a>
+    {{/if}}
+    {{#unless registered}}
+    <div id="log-in">
+        <div id="log-in-form" class="hidden">
+            <label for="user-name">Потребителско име:</label>
+            <input id="user-name" type="text" />
+            <label for="user-password">Парола:</label>
+            <input id="user-password" type="text" />
+            <a id="log-in-button" href="#">Влез</a>
         </div>
-        {{/unless}}
-    </script>
-    <!--header-->
-</nav>
+        <a id="show-log-in" href="#">Вход</a>
+        <a id="register-button" href="#">Регистрация</a>
+    </div>
+    {{/unless}}
+</script>
