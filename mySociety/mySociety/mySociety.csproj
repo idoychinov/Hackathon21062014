@@ -234,6 +234,7 @@
     <Content Include="Content\kendo\2014.1.318\images\kendoui.ttf" />
     <None Include="Scripts\libs\jquery-2.1.1.intellisense.js" />
     <Content Include="problem-template.html" />
+    <Content Include="Resources\images\logo.png" />
     <Content Include="Resources\images\Problems\beach.jpg" />
     <Content Include="Resources\images\Problems\blocked-river.jpg" />
     <Content Include="Resources\images\Problems\bridge.jpg" />
@@ -248,6 +249,7 @@
     <Content Include="Resources\images\Success\planed-trees.jpg" />
     <Content Include="Resources\images\thumbs\help.jpg" />
     <Content Include="Resources\images\thumbs\success.jpg" />
+    <Content Include="Resources\images\vote.png" />
     <Content Include="Resources\logo.png" />
     <Content Include="Scripts\problems.js" />
     <Content Include="Scripts\libs\handlebars.amd.js" />

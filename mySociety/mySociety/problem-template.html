@@ -4,23 +4,64 @@
     <title></title>
     <link href="Styles/main.css" rel="stylesheet" />
     <script src="Scripts/libs/jquery-2.1.1.min.js"></script>
-    <script src="Scripts/libs/handlebars.min.js"></script>
-    <script src="Scripts/problems.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("header").load("header.html");
+            $("footer").load("footer.html");
+            $('#slider-section').load("slider-main.html");
+        });
+    </script>
 </head>
 <body>
     <div id="wrapper">
-        <div id="problem-container"></div>
+        <header></header>
+        <div id="single-problem-container"></div>
         <script id="problem-template" type='text/x-handlebars-template'>
             {{#problems}}
-            <h2>{{title}}</h2>
-            <span>{{date}}</span>
-            <span>{{location}}</span>
-            <span class="author">by {{user}}</span>
+            <div class="signal-details">
+                <h2>{{title}}</h2>
+                <span>{{date}}</span>
+                <span>{{location}}</span>
+                <span class="author">by {{user}}</span>
+                
+            </div>
+
+            <img src="{{{image}}}" alt="Alternate Text" />
+            <p class="description">{{summary}}</p>
+            <img src="Resources/images/vote.png" class="vote" />
+            <ul>
+                <li>Потвърди</li>
+                <li>Сподели</li>
+                <li>Помогни</li>
+                <li>Subscribe</li>
+            </ul>
+            <div id="comments">
+                <h3>Коментари</h3>
+                <p class="single-comment">Да, и аз го видях. Трябва да се вземат мерки</p>
+                <p class="single-comment">Наистина е така.</p>
+                <textarea></textarea>
+            </div>
             {{/problems}}
         </script>
-</div>
+        <footer></footer>
+    </div>
+    <script src="Scripts/libs/handlebars.min.js"></script>
+    <script src="Scripts/problems.js"></script>
     <script>
-        var problemContainer = document.getElementById('problem-container');
+        problems = [{ id: 3,
+            date: "17.09.2013",
+            image: "Resources/images/problems/park.jpg",
+            title: "Изпочупени пейки",
+            status: "Неприключен",
+            user: 'Пешо',
+            location: "София",
+            summary: "Пейките при кучешката градинка за изпочипени и имат нужда от боядисване.",
+            category: "Почистване",
+            tags: ["парк", "поправка"],
+            finished: false
+            }];
+               
+        var problemContainer = document.getElementById('single-problem-container');
 
         problemTemplate = Handlebars.compile((document.getElementById('problem-template')).innerHTML);
         problemContainer.innerHTML = problemTemplate({
